@@ -156,3 +156,46 @@ footer {
   text-align: center;
 }
   
+/*  media queries */
+
+@media(max-width:900px) {
+  header h1 {
+    font-size: 70px;
+  }
+
+  nav {
+    display: flex;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.8);
+    transition: .4s;
+  }
+
+  nav ul {
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav ul li {
+    padding: 42px 0;
+  }
+
+  nav li a {
+    font-size: 20px;
+    position: relative;
+  }
+
+  nav li a::after {
+    content: close-quote;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 60%;
+    height: 24px;
+    margin: 0 auto;
+    border-bottom: 1px solid #929292;
+
+  }
+
+}
