@@ -166,6 +166,9 @@ footer {
   nav {
     display: flex;
     height: 100vh;
+    /* hide nav */
+    transform: scaleY(0) translate(1200px);
+
     background-color: rgba(255,255,255,0.8);
     transition: .4s;
   }
@@ -195,7 +198,51 @@ footer {
     height: 24px;
     margin: 0 auto;
     border-bottom: 1px solid #929292;
-
   }
 
-}
+  /* follow me section */
+
+    .section-follow .follow-me::after {
+      width: 120px;
+      height: 36px;
+    }
+
+    /* sections */
+
+    section h3 {
+      font-size: 24px;
+    }
+
+    section {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+    }
+
+    section:nth-child(2n) {
+      flex-direction: column;
+    }
+
+    section .image img {
+      margin: 0 auto;
+      height: auto;
+      width: 95%;
+    }
+
+    /* menu icon */
+
+    .menu-btn {
+      z-index: 10;
+      color: #474747;
+      display: block;
+      position: fixed;
+      right: 16px;
+      top: 16px;
+      font-size: 64px;
+      transition: 0.4s;
+      font-family: "Roboto Slab";
+      cursor: pointer;
+      transform: rotate(0deg);
+    }
+    
+  }
