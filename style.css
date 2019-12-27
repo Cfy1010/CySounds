@@ -26,6 +26,16 @@ nav {
     transition: 0.6s;
 }
 
+/* create after Js */
+nav.scrolled {
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(50,50,50, 0.1) ;
+}
+
+nav.scrolled + .logo img {
+  height: 55px;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -167,10 +177,14 @@ footer {
     display: flex;
     height: 100vh;
     /* hide nav */
-    transform: scaleY(0) translate(1200px);
+    transform: scaleY(0) translateY(1200px);
 
     background-color: rgba(255,255,255,0.8);
     transition: .4s;
+  }
+
+  nav.active {
+    transform: scaleY(1) translate(0px);
   }
 
   nav ul {
@@ -245,4 +259,7 @@ footer {
       transform: rotate(0deg);
     }
     
+    .menu-btn.active {
+      transform: rotate(135deg);
+    }
   }

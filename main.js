@@ -7,3 +7,10 @@ menuBtn.addEventListener("click", function(){
   nav.classList.toggle("active");
 });
 
+window.addEventListener("scroll", function(){
+  if (window.pageYOffset > 4) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+})
